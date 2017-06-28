@@ -1,5 +1,6 @@
 void setup(){
   /*to initialize*/
+  pinMode();
 }
 
 void loop(){
