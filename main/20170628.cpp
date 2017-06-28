@@ -1,13 +1,17 @@
-int led = 13;
+int led1 = 13;
+int led2 = 10;
 
 void setup(){
   /*to initialize* the digital pin as an output*/
-  pinMode(13, OUTPUT); /*Pin 13 has an LED connected*/
+  pinMode(led1, OUTPUT); /*Pin 13 has an LED connected*/
+  pinMode(led2, OUTPUT);
 }
 
 void loop(){
-  digitalWrite(13, HIGH); /*set the LED on*/
+  digitalWrite(let1, HIGH); /*set the LED on*/
+  digitalWrite(let2, LOW);
   delay(750);
-  digitalWrite(13, LOW); /*sest the LED off*/
+  digitalWrite(let1, LOW); /*sest the LED off*/
+  digitalWrite(let2, HIGH);
   delay(1500); /*wait for 1.5 second*/
 }
