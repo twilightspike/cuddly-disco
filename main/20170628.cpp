@@ -8,10 +8,10 @@ void setup(){
 }
 
 void loop(){
-  digitalWrite(let1, HIGH); /*set the LED on*/
-  digitalWrite(let2, LOW);
+  digitalWrite(led1, HIGH); /*set the LED on*/
+  digitalWrite(led2, LOW);
   delay(750);
-  digitalWrite(let1, LOW); /*sest the LED off*/
-  digitalWrite(let2, HIGH);
+  digitalWrite(led1, LOW); /*sest the LED off*/
+  digitalWrite(led2, HIGH);
   delay(1500); /*wait for 1.5 second*/
 }
