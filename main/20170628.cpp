@@ -1,3 +1,5 @@
+int led = 13;
+
 void setup(){
   /*to initialize* the digital pin as an output*/
   pinMode(13, OUTPUT); /*Pin 13 has an LED connected*/
