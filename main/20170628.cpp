@@ -1,4 +1,4 @@
-int led = 13;
+define led = 13;
 
 void setup(){
   /*to initialize* the digital pin as an output*/
