@@ -43,9 +43,9 @@ public void UpdatePhysics(){
   mPosition = mPosition_1;
   mSpeed = mSpeed_1;
   
-  mPushWallRight_0 = mPushWallRight_1;
-  mPushWallLeft_0 = mPushWallLeft_1;
-  mAtCeiling_0 = mAtCeiling_1;
-  mOnGround_0 = mOnGround_1;
+  mPushWallRight = mPushWallRight_1;
+  mPushWallLeft = mPushWallLeft_1;
+  mAtCeiling = mAtCeiling_1;
+  mOnGround = mOnGround_1;
 }
 
