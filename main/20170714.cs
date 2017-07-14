@@ -39,7 +39,7 @@ public class MovingObject{
 }
 
 /*to update the object by void*/
-public void UpdatePhysics{
+public void UpdatePhysics(){
   mPosition = mPosition_1;
   mSpeed = mSpeed_1;
   
