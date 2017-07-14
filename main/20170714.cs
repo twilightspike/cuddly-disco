@@ -14,38 +14,38 @@ public bool Ovverlaps(AABB other){
 
 /*create Object and fill the data*/
 public class MovingObject{
-  public Vector2 position0;
-  public Vector2 position1;
+  public Vector2 mPosition_0;
+  public Vector2 mPosition_1;
   
-  public Vector2 speed0;
-  public Vector2 speed1;
+  public Vector2 mSpeed_0;
+  public Vector2 mSpeed_1;
   
-  public Vector2 scale;
+  public Vector2 mScale;
   /*offset*/
-  public AABB aabb;
-  public Vector2 aabbOffset;
+  public AABB mAABB;
+  public Vector2 mAABBOffset;
   /*position state using bool*/
-  public bool pushWallRight0;
-  public bool pushWallRight1;
+  public bool pushWallRight_0;
+  public bool pushWallRight_1;
   
-  public bool pushWallLeft0;
-  public bool pushWallLeft1;
+  public bool mPushWallLeft_0;
+  public bool mPushWallLeft_1;
   
-  public bool atCeiling0;
-  public bool atCeiling1;
+  public bool mAtCeiling_0;
+  public bool mAtCeiling_1;
   
-  public bool onGround0;
-  public bool onGround1;
+  public bool mOnGround_0;
+  public bool mOnGround_1;
 }
 
 /*to update the object by void*/
 public void UpdatePhysics{
-  position0 = position1;
-  speed0 = speed1;
+  mPosition_0 = mPosition_1;
+  mSpeed_0 = mSpeed_1;
   
-  pushWallRight0 = pushWallRight1;
-  pushWallLeft0 = pushWallLeft1;
-  atCeiling0 = atCeiling1;
-  onGround0 = onGround1;
+  mPushWallRight_0 = mPushWallRight_1;
+  mPushWallLeft_0 = mPushWallLeft_1;
+  mAtCeiling_0 = mAtCeiling_1;
+  mOnGround_0 = mOnGround_1;
 }
 
