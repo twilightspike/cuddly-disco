@@ -11,3 +11,8 @@ public bool Ovverlaps(AABB other){
   if( Math.Abs(center.y - other.center.y) > halfSize.y + other.halfSize.y ) return false;
   return true;
 }
+
+/*create Object*/
+public class MovingObject{
+  
+}
