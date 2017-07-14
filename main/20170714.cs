@@ -40,5 +40,12 @@ public class MovingObject{
 
 /*to update the object by void*/
 public void UpdatePhysics{
+  position0 = position1;
+  speed0 = speed1;
   
+  pushWallRight0 = pushWallRight1;
+  pushWallLeft0 = pushWallLeft1;
+  atCeiling0 = atCeiling1;
+  onGround0 = onGround1;
 }
+
