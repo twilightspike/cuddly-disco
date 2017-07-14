@@ -12,7 +12,7 @@ public bool Ovverlaps(AABB other){
   return true;
 }
 
-/*create Object*/
+/*create Object and fill the data*/
 public class MovingObject{
   
 }
