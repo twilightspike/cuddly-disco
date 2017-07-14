@@ -14,5 +14,11 @@ public bool Ovverlaps(AABB other){
 
 /*create Object and fill the data*/
 public class MovingObject{
+  public Vector2 Position0;
+  public Vector2 Position1;
   
+  public Vector2 Speed0;
+  public Vector2 Speed1;
+  
+  public Vector2 scale;
 }
