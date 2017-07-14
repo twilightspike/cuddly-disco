@@ -14,14 +14,27 @@ public bool Ovverlaps(AABB other){
 
 /*create Object and fill the data*/
 public class MovingObject{
-  public Vector2 Position0;
-  public Vector2 Position1;
+  public Vector2 position0;
+  public Vector2 position1;
   
-  public Vector2 Speed0;
-  public Vector2 Speed1;
+  public Vector2 speed0;
+  public Vector2 speed1;
   
   public Vector2 scale;
   /*offset*/
   public AABB aabb;
   public Vector2 aabbOffset;
+  /*position state using bool*/
+  public bool pushWallRight0;
+  public bool pushWallRight1;
+  
+  public bool pushWallLeft0;
+  public bool pushWallLeft1;
+  
+  public bool atCeiling0;
+  public bool atCeiling1;
+  
+  public bool onGround0;
+  public bool onGround1;
 }
+
