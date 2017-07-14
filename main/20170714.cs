@@ -76,12 +76,13 @@ public enum KeyInput{
   Count
 }
 
+/*to use character control*/
 protected bool Released(KeyInput key){
-  return ();
+  return (!mInputs[(int)key] && mPreInputs[(int)key]);
 }
-protected bool KeyState(){
-  return ();
+protected bool KeyState(KeyInput key){
+  return (mInputs[(int)key]);
 }
-protected bool Pressed(){
-  return ();
+protected bool Pressed(KeyInput key){
+  return (mInputs[(int)key] && !mPreInputs[(int)key]);
 }
