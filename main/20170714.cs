@@ -52,3 +52,9 @@ public void UpdatePhysics(){
 /*update position using current speed*/
 mPosition += mSpeed * Time.deltaTime;
 
+if(mPosition.y < 0.0f){
+  mPosition.y = 0.0f;
+  mOnGround = true;
+}else{
+  mOnGround = false;
+}
