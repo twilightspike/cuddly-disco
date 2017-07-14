@@ -76,3 +76,12 @@ public enum KeyInput{
   Count
 }
 
+protected bool Released(KeyInput key){
+  return ();
+}
+protected bool KeyState(){
+  return ();
+}
+protected bool Pressed(){
+  return ();
+}
