@@ -63,7 +63,8 @@ mAABB.center = mPosition + mAABBOffset;
 
 /*Character Control*/
 public class Character : MovingObject{
-
+  protected bool[] mInputs;
+  protected bool[] mPreInputs;
 }
 
 /*to list all controls*/
