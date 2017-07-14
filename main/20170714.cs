@@ -21,4 +21,7 @@ public class MovingObject{
   public Vector2 Speed1;
   
   public Vector2 scale;
+  /*offset*/
+  public AABB aabb;
+  public Vector2 aabbOffset;
 }
