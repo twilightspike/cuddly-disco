@@ -38,3 +38,7 @@ public class MovingObject{
   public bool onGround1;
 }
 
+/*to update the object by void*/
+public void UpdatePhysics{
+  
+}
