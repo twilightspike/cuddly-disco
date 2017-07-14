@@ -61,3 +61,17 @@ if(mPosition.y < 0.0f){
 /*Update AABB's center because of new position*/
 mAABB.center = mPosition + mAABBOffset;
 
+/*Character Control*/
+public class Character : MovingObject{
+
+}
+
+/*to list all controls*/
+public enum KeyInput{
+  GoLeft = 0,
+  GoRight,
+  GoDown,
+  Jump,
+  Count
+}
+
