@@ -1,3 +1,3 @@
-int aaa;
-int bbb;
-int ccc;
+public struct AABB{
+  
+}
