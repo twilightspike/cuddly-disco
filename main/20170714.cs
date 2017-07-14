@@ -58,3 +58,6 @@ if(mPosition.y < 0.0f){
 }else{
   mOnGround = false;
 }
+/*Update AABB's center because of new position*/
+mAABB.center = mPosition + mAABBOffset;
+
