@@ -24,7 +24,8 @@ public class LuckWheelManager: MonoBehaviour{
 	public Text MoneyNowText;
 	/*action*/
 	private void Awake(){
-		
+		MoneyPrevTotal = MoneyNowTotal;
+		MoneyNowText.text = MoneyNowTotal.ToString();
 	}
 	
 	public void SpinWheel(){
