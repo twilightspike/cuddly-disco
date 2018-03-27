@@ -53,9 +53,9 @@ public class LuckWheelManager: MonoBehaviour{
 		}
 	}
 	
-	void RewardByAngle(){
-	
-	}
+	/*void RewardByAngle(){
+		switch(_angleBegin){}
+	}*/
 	
 	void Update(){}
 }
