@@ -57,5 +57,20 @@ public class LuckWheelManager: MonoBehaviour{
 		switch(_angleBegin){}
 	}*/
 	
-	void Update(){}
+	void Update(){
+	
+		/*The Poor is banned*/
+		if(_beStarted || MoneyNowTotal < PressCost){
+			buttonPress.interactable = false;
+			/*buttonPress.GetComponent<Image>.color = new Color();*/
+		}else{
+			buttonPress.interactable = true;
+			/*buttonPress.GetComponent<Image>.color = new Color();*/
+		}
+		
+		if(!_beStarted){
+			return;
+		}
+		
+	}
 }
