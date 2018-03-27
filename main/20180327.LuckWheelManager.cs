@@ -72,12 +72,19 @@ public class LuckWheelManager: MonoBehaviour{
 			return;
 			
 		float LerpRotateTimeMax = 4f;
-			
+		
+		/*calculate increment time once per frame*/	
 		_lerpRotateTimeNow += Time.deltaTime;
 		if(_lerpRotateTimeNow > LerpRotateTimeMax || circleWheel.transform.EulerAngles.z == _angleFinal){
 			_lerpRotateTimeNow = LerpRotateTimeMax;
+			_beStarted = false;
+			_angleBegin = _angleFinal % 360;
 			
+			AwardByAngle();
+			StartCoroutine(MoneyDeltaHide());
 		}
+			
+		/**/
 		}
 		
 	}
