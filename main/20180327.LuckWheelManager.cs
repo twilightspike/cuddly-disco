@@ -29,7 +29,14 @@ public class LuckWheelManager: MonoBehaviour{
 	}
 	
 	public void SpinWheel(){
-	
+		if(MoneyNowTotal >= PressCost){
+			_lerpRotateTimeNow = 0f;
+			
+			_angleSector =  new float[]{
+				30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360
+			};
+			
+		}
 	}
 	
 	void RewardByAngle(){
