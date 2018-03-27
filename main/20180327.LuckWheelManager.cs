@@ -70,6 +70,14 @@ public class LuckWheelManager: MonoBehaviour{
 		
 		if(!_beStarted){
 			return;
+			
+		float LerpRotateTimeMax = 4f;
+			
+		_lerpRotateTimeNow += Time.deltaTime;
+		if(_lerpRotateTimeNow > LerpRotateTimeMax || circleWheel.transform.EulerAngles.z == _angleFinal){
+			_lerpRotateTimeNow = LerpRotateTimeMax;
+			
+		}
 		}
 		
 	}
