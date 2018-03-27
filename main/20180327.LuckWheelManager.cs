@@ -35,7 +35,21 @@ public class LuckWheelManager: MonoBehaviour{
 			_angleSector =  new float[]{
 				30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360
 			};
+			int circleFull = 5;
+			float randomAngleFinal = _angleSector [UnityEngine.Random.Range(0, _angleSector.Length)];
+			/*angle would rotate*/
+			_angleFinal = -(circleFull * 360 + randomAngleFinal);
+			_beStarted = true;
 			
+			MoneyPrevTotal = MoneyNowTotal;
+			/*Whenever I play, my wallet fades*/
+			MoneyNowTotal = -PressCost;
+			/*Addict to it?!*/
+			MoneyDeltaText.text = PressCost + "bye!";
+			MoneyDeltaText.gameObject.SetActive(true);
+			
+			StartCoroutine(MoneyDeltaHide());
+			StartCoroutine(MoneyTotalUpdate());
 		}
 	}
 	
