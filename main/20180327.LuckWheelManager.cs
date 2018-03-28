@@ -84,8 +84,14 @@ public class LuckWheelManager: MonoBehaviour{
 			StartCoroutine(MoneyDeltaHide());
 		}
 			
-		/**/
+		/*useage of Linear interpolation*/
+		float d = _lerpRotateTimeNow / LerpRotateTimeMax;
+		
+		float angle = Mathf.Lerp(_angleBegin, _angleFinal, d);
+		circleWheel.transform.EulerAngles = new Vector3(0, 0, angle);
 		}
 		
+		MoneyPrevTotal = MoneyNowTotal;
+		MoneyNowText = MoneyNowTotal.ToString();
 	}
 }
